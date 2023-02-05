@@ -1,0 +1,129 @@
+{
+  "components": {
+    "aside": {
+      "my_panel": {
+        "home": "Головна сторінка",
+        "liked_videos": "Підписки відео",
+        "subscriptions": "Підписки",
+        "your_videos": "Ваші відео"
+      },
+      "subscriptions": {
+        "title": "Підписки"
+      }
+    },
+    "confirm-modal": {
+      "cancel": "відминити",
+      "confirm": "підтвердити"
+    },
+    "header": {
+      "search": {
+        "placeholder": "Пошук"
+      },
+      "select-file": {
+        "button": "Виберіть файли",
+        "heading": "Перетягніть відеофайли для завантаження",
+        "hint": "Ваші відео будуть приватними, поки ви їх не опублікуєте"
+      },
+      "upload-video": {
+        "hint-bottom": "Будь ласка, переконайтеся, що ви не порушуєте авторські права або права на приватність інших осіб. Дізнайтеся більше",
+        "hint-top": "Надсилаючи свої відео на YouTube, ви підтверджуєте, що погоджуєтеся з Умовами використання та правилами спільноти YouTube",
+        "title": "Завантажити відео"
+      },
+      "user-menu": {
+        "admin": "Адмін меню",
+        "appearance": "Зовнішній вигляд",
+        "help": "Допомога",
+        "language": "Мова",
+        "send_feedback": "Надіслати відгук",
+        "settings": "Налаштування",
+        "sign_out": "Вийти з системи",
+        "your_channel": "Ваш канал"
+      }
+    },
+    "login-and-register": {
+      "bio": "Біо",
+      "create-account": "Створити обліковий запис",
+      "email": "Електронна пошта",
+      "heading": "щоб продовжити в YouTube-Clone",
+      "login": "Логін",
+      "password": "Пароль",
+      "register": "Зареєструватися",
+      "select-avatar": "Виберіть аватар",
+      "sign-in": "Увійдіть в систему",
+      "username": "Ім'я користувача"
+    },
+    "sign-in-button": {
+      "text": "Вхід"
+    },
+    "subscribe-button": {
+      "subscribe": "Підписатись",
+      "subscribed": "Підписався"
+    },
+    "video-link": {
+      "views": "переглядів"
+    },
+    "video-list": {
+      "no-videos": "Немає відео"
+    }
+  },
+  "pages": {
+    "admin": {
+      "all-videos": {
+        "amount": "кількість",
+        "video-item": {
+          "author": "автор",
+          "delete": "видалити",
+          "description": "опис",
+          "edit": "редагувати",
+          "modal-text": "ви впевнені, що хочете видалити відео?",
+          "modal-title": "підтвердження",
+          "open": "відкрити",
+          "title": "назва",
+          "video-removed": "відео видалено"
+        }
+      }
+    },
+    "user": {
+      "user-about": {
+        "description": "опис",
+        "stats": "статистика",
+        "view": "перегляд",
+        "views": "переглядів"
+      },
+      "user-channels": {
+        "no-channels": "немає каналів"
+      },
+      "user-info": {
+        "subscriber": "підписник",
+        "subscribers": "підписників"
+      },
+      "user-tabs": {
+        "about": "про",
+        "channels": "канали",
+        "videos": "відео"
+      }
+    },
+    "video": {
+      "video-author": {
+        "subscriber": "підписник",
+        "subscribers": "підписників"
+      },
+      "video-recommendations": {
+        "no-recommendations": "немає рекомендацій"
+      }
+    }
+  },
+  "settings": {
+    "theme": {
+      "dark": "Темна",
+      "light": "Світла",
+      "theme": "тема"
+    }
+  },
+  "toasts": {
+    "check-video-file-error": "Допускаються лише відеофайли",
+    "not-an-image-file": "Не файл зображення",
+    "successfully": "Успішно",
+    "video-file-uploaded": "Відеофайл завантажено"
+  }
+}

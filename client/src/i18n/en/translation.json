@@ -1,0 +1,129 @@
+{
+  "components": {
+    "aside": {
+      "my_panel": {
+        "home": "Home",
+        "liked_videos": "Liked videos",
+        "subscriptions": "Subscriptions",
+        "your_videos": "Your videos"
+      },
+      "subscriptions": {
+        "title": "Subscriptions"
+      }
+    },
+    "confirm-modal": {
+      "cancel": "cancel",
+      "confirm": "confirm"
+    },
+    "header": {
+      "search": {
+        "placeholder": "Search"
+      },
+      "select-file": {
+        "button": "Select files",
+        "heading": "Drag and drop video files to upload",
+        "hint": "Your videos will be private until you publish them"
+      },
+      "upload-video": {
+        "hint-bottom": "Please be sure not to violate others copyright or privacy rights. Learn more",
+        "hint-top": "By submitting your videos to YouTube, you acknowledge that you agree to YouTubes Terms of Service and Community Guidelines",
+        "title": "Upload videos"
+      },
+      "user-menu": {
+        "admin": "Admin menu",
+        "appearance": "Appearance",
+        "help": "Help",
+        "language": "Language",
+        "send_feedback": "Send feedback",
+        "settings": "Settings",
+        "sign_out": "Sign out",
+        "your_channel": "Your channel"
+      }
+    },
+    "login-and-register": {
+      "bio": "Bio",
+      "create-account": "Create account",
+      "email": "Email",
+      "heading": "to continue to YouTube-Clone",
+      "login": "Login",
+      "password": "Password",
+      "register": "Register",
+      "select-avatar": "Select avatar",
+      "sign-in": "Sign in",
+      "username": "Username"
+    },
+    "sign-in-button": {
+      "text": "Sign in"
+    },
+    "subscribe-button": {
+      "subscribe": "Subscribe",
+      "subscribed": "Subscribed"
+    },
+    "video-link": {
+      "views": "views"
+    },
+    "video-list": {
+      "no-videos": "No videos"
+    }
+  },
+  "pages": {
+    "admin": {
+      "all-videos": {
+        "amount": "amount",
+        "video-item": {
+          "author": "author",
+          "delete": "delete",
+          "description": "description",
+          "edit": "edit",
+          "modal-text": "are you sure you want to delete the video?",
+          "modal-title": "confirmation",
+          "open": "open",
+          "title": "title",
+          "video-removed": "video removed"
+        }
+      }
+    },
+    "user": {
+      "user-about": {
+        "description": "description",
+        "stats": "stats",
+        "view": "view",
+        "views": "views"
+      },
+      "user-channels": {
+        "no-channels": "no channels"
+      },
+      "user-info": {
+        "subscriber": "subscriber",
+        "subscribers": "subscribers"
+      },
+      "user-tabs": {
+        "about": "about",
+        "channels": "channels",
+        "videos": "videos"
+      }
+    },
+    "video": {
+      "video-author": {
+        "subscriber": "subscriber",
+        "subscribers": "subscribers"
+      },
+      "video-recommendations": {
+        "no-recommendations": "no recommendations"
+      }
+    }
+  },
+  "settings": {
+    "theme": {
+      "dark": "Dark",
+      "light": "Light",
+      "theme": "theme"
+    }
+  },
+  "toasts": {
+    "check-video-file-error": "Only video files are allowed",
+    "not-an-image-file": "Not an image file",
+    "successfully": "Successfully",
+    "video-file-uploaded": "Video file uploaded"
+  }
+}

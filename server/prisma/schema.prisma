@@ -1,0 +1,105 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String             @id @default(uuid())
+  createdAt    DateTime           @default(now())
+  roles        Role[]             @default([User])
+  email        String             @unique
+  password     String
+  profile      Profile?
+  videos       Video[]
+  likes        VideoLike[]
+  comments     VideoComment[]
+  views        VideoView[]
+  commentLikes VideoCommentLike[]
+  subscribers  Subscription[]     @relation("subscriber")
+  subscribedTo Subscription[]     @relation("subscribedTo")
+}
+
+model Profile {
+  id       String  @id @default(uuid())
+  avatar   String?
+  cover    String?
+  username String  @unique
+  bio      String?
+  userId   String  @unique
+  user     User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Subscription {
+  id             String   @id @default(uuid())
+  createdAt      DateTime @default(now())
+  subscriberId   String
+  subscribedToId String
+  subscriber     User     @relation("subscriber", fields: [subscriberId], references: [id], onDelete: Cascade)
+  subscribedTo   User     @relation("subscribedTo", fields: [subscribedToId], references: [id], onDelete: Cascade)
+}
+
+model Video {
+  id          String         @id @default(uuid())
+  createdAt   DateTime       @default(now())
+  title       String
+  description String?
+  url         String
+  thumbnail   String?
+  userId      String
+  user        User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  likes       VideoLike[]
+  comments    VideoComment[]
+  views       VideoView[]
+}
+
+model VideoView {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  videoId   String
+  userId    String?
+  video     Video    @relation(fields: [videoId], references: [id], onDelete: Cascade)
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+}
+
+model VideoLike {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  value     Int      @default(0)
+  userId    String
+  videoId   String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  video     Video    @relation(fields: [videoId], references: [id], onDelete: Cascade)
+}
+
+model VideoComment {
+  id        String             @id @default(uuid())
+  createdAt DateTime           @default(now())
+  message   String
+  userId    String
+  videoId   String
+  user      User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  video     Video              @relation(fields: [videoId], references: [id], onDelete: Cascade)
+  likes     VideoCommentLike[]
+}
+
+model VideoCommentLike {
+  id        String       @id @default(uuid())
+  value     Int          @default(0)
+  userId    String
+  commentId String
+  user      User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  comment   VideoComment @relation(fields: [commentId], references: [id], onDelete: Cascade)
+}
+
+enum Role {
+  Root
+  Admin
+  User
+}

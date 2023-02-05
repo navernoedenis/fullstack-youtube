@@ -1,0 +1,26 @@
+{
+  "extends": ["airbnb-typescript-prettier"],
+  "rules": {
+    "@typescript-eslint/no-shadow": ["off"],
+    "@typescript-eslint/no-var-requires": 0,
+    "import/prefer-default-export": "off",
+    "no-param-reassign": 0,
+    "no-shadow": "off",
+    "react/jsx-props-no-spreading": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": false,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  }
+}

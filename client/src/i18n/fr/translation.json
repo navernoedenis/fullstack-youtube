@@ -1,0 +1,129 @@
+{
+  "components": {
+    "aside": {
+      "my_panel": {
+        "home": "Accueil",
+        "liked_videos": "Vidéos aimées",
+        "subscriptions": "Abonnements",
+        "your_videos": "Vos vidéos"
+      },
+      "subscriptions": {
+        "title": "Abonnements"
+      }
+    },
+    "confirm-modal": {
+      "cancel": "annuler",
+      "confirm": "confirmer"
+    },
+    "header": {
+      "search": {
+        "placeholder": "Recherche"
+      },
+      "select-file": {
+        "button": "Sélectionner des fichiers",
+        "heading": "Faites glisser et déposez les fichiers vidéo à télécharger",
+        "hint": "Vos vidéos seront privées jusqu'à ce que vous les publiiez"
+      },
+      "upload-video": {
+        "hint-bottom": "Veillez à ne pas violer les droits d'auteur ou les droits à la vie privée d'autrui. En savoir plus",
+        "hint-top": "En soumettant vos vidéos à YouTube, vous reconnaissez que vous acceptez les conditions de service et les directives de la communauté de YouTube",
+        "title": "Télécharger des vidéos"
+      },
+      "user-menu": {
+        "admin": "Menu administrateur",
+        "appearance": "Apparition",
+        "help": "Aide",
+        "language": "Langue",
+        "send_feedback": "Envoyer des commentaires",
+        "settings": "Paramètres",
+        "sign_out": "Se déconnecter",
+        "your_channel": "Votre chaîne"
+      }
+    },
+    "login-and-register": {
+      "bio": "Bio",
+      "create-account": "Créer un compte",
+      "email": "Courriel",
+      "heading": "pour continuer vers YouTube-Clone",
+      "login": "Connexion",
+      "password": "Mot de passe",
+      "register": "Enregistrer",
+      "select-avatar": "Sélectionnez un avatar",
+      "sign-in": "Se connecter",
+      "username": "Nom d'utilisateur"
+    },
+    "sign-in-button": {
+      "text": "Se connecter"
+    },
+    "subscribe-button": {
+      "subscribe": "S'abonner à",
+      "subscribed": "Abonné"
+    },
+    "video-link": {
+      "views": "vues"
+    },
+    "video-list": {
+      "no-videos": "Aucune vidéo"
+    }
+  },
+  "pages": {
+    "admin": {
+      "all-videos": {
+        "amount": "montant",
+        "video-item": {
+          "author": "auteur",
+          "delete": "supprimer",
+          "description": "description",
+          "edit": "modifier",
+          "modal-text": "êtes-vous sûr de vouloir supprimer la vidéo ?",
+          "modal-title": "confirmation",
+          "open": "ouvrir",
+          "title": "titre",
+          "video-removed": "vidéo supprimée"
+        }
+      }
+    },
+    "user": {
+      "user-about": {
+        "description": "description",
+        "stats": "statistiques",
+        "view": "vue",
+        "views": "vues"
+      },
+      "user-channels": {
+        "no-channels": "pas de canaux"
+      },
+      "user-info": {
+        "subscriber": "abonné",
+        "subscribers": "abonnés"
+      },
+      "user-tabs": {
+        "about": "à propos de",
+        "channels": "canaux",
+        "videos": "vidéos"
+      }
+    },
+    "video": {
+      "video-author": {
+        "subscriber": "abonné",
+        "subscribers": "abonnés"
+      },
+      "video-recommendations": {
+        "no-recommendations": "pas de recommandations"
+      }
+    }
+  },
+  "settings": {
+    "theme": {
+      "dark": "Dark",
+      "light": "Clair",
+      "theme": "thème"
+    }
+  },
+  "toasts": {
+    "check-video-file-error": "Seuls les fichiers vidéo sont autorisés",
+    "not-an-image-file": "Pas un fichier image",
+    "successfully": "Succès de",
+    "video-file-uploaded": "Fichier vidéo télécharg"
+  }
+}
